@@ -20,7 +20,7 @@
 | 3 | [Điền] | [MSSV] | Role 3 - Cleaning & corruption | `src/ingestion/cleaning.py`, `corruption.py` | `duong` |
 | 4 | [Điền] | [MSSV] | Role 4 - RAG & agent | `src/retrieval/`, `data/embeddings/` | `Tri Tue` |
 | 5 | Lương Đức Thắng | [MSSV] | Role 5 - Evaluation / Bonus | `src/evaluation/` | `luongducthangDS` |
-| 6 | [Điền - người nộp báo cáo này] | [MSSV] | Role 6 - Observability | `src/observability/`, `script/verify_artifacts.py`, `data/quality/` | [điền sau khi commit] |
+| 6 | Nguyễn Hà Bách | 2A202601592 | Role 6 - Observability | `src/observability/`, `script/verify_artifacts.py`, `data/quality/` | [điền sau khi commit] |
 
 ## 2. Tóm tắt kết quả
 

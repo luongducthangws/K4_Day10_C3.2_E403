@@ -5,7 +5,7 @@
 | Thông tin | Nội dung |
 | --- | --- |
 | Họ và tên | Lương Đức Thắng |
-| MSSV | [MSSV] |
+| MSSV | 2A202601196 |
 | Khóa/Lớp | K4 |
 | Tên nhóm | Group 4 |
 | Vai trò chính | Role 5: Bonus (CLI, Advanced Visualization & Validation) |

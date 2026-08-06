@@ -5,7 +5,7 @@
 | Thông tin | Nội dung |
 | --- | --- |
 | **Họ và tên** | **Nguyễn Hoàng Vũ** |
-| **MSSV** | [Điền MSSV của bạn vào đây] |
+| **MSSV** | 2A202601941 |
 | **Khóa/Lớp** | K4 |
 | **Tên nhóm** | Group 4 |
 | **Vai trò chính** | **Vai trò 1: Integrator & Release Manager (Orchestration, QA, Provider & Demo)** |

@@ -1,7 +1,5 @@
 # Member Role Report — Day 10: Data Pipeline & Data Observability
 
-> Đổi tên file thành `<MSSV>_HoTen.md` theo quy ước ở `report/README.md` mục 1 trước khi nộp.
-
 ## 1. Thông tin cá nhân
 
 | Thông tin | Nội dung |
