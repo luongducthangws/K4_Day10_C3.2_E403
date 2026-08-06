@@ -4,8 +4,8 @@
 
 | Thông tin | Nội dung |
 | --- | --- |
-| Họ và tên | [Họ và tên] |
-| MSSV | [MSSV] |
+| Họ và tên | [Lương Trí Tuệ] |
+| MSSV | [2A201601919] |
 | Khóa/Lớp | K4 |
 | Tên nhóm | Group 4 |
 | Vai trò chính | Role 4: Corruption, repair, evaluation integration |
@@ -140,5 +140,5 @@ Có thể thêm unit tests cho corruption và repair flow, cùng metadata về t
 - [x] Báo cáo không chứa `.env`, API key, token hoặc secret.
 - [x] Báo cáo này không phải bản sao nguyên văn của báo cáo nhóm hoặc báo cáo thành viên khác.
 
-**Họ và tên:** [Họ và tên]
+**Họ và tên:** [Lương Trí Tuệ]
 **Ngày xác nhận:** 2026-08-06
