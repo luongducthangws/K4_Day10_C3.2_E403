@@ -1,0 +1,10 @@
+{
+  "report_name": "baseline_quality.json",
+  "total_rows": 24,
+  "null_paper_ids": 0,
+  "duplicate_paper_ids": 0,
+  "null_titles": 0,
+  "empty_summaries": 0,
+  "stale_rows": 0,
+  "all_passed": true
+}

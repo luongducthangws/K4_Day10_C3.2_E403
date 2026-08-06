@@ -46,6 +46,8 @@ class Settings:
     model_name: str
     google_api_key: str | None
     openai_api_key: str | None
+    groq_api_key: str | None
+    groq_base_url: str
     anthropic_api_key: str | None
     openrouter_api_key: str | None
     openrouter_base_url: str
@@ -113,6 +115,8 @@ def load_settings(project_dir: Path | None = None) -> Settings:
         model_name=os.getenv("LLM_MODEL", "gemini-2.5-flash"),
         google_api_key=os.getenv("GOOGLE_API_KEY"),
         openai_api_key=os.getenv("OPENAI_API_KEY"),
+        groq_api_key=os.getenv("GROQ_API_KEY"),
+        groq_base_url=os.getenv("GROQ_BASE_URL", "https://api.groq.com/openai/v1"),
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY"),
         openrouter_api_key=os.getenv("OPENROUTER_API_KEY"),
         openrouter_base_url=os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
@@ -154,6 +158,10 @@ def require_llm_credentials(settings: Settings) -> None:
         if settings.openai_api_key:
             return
         raise RuntimeError("OPENAI_API_KEY is required when LLM_PROVIDER=openai.")
+    if provider == "groq":
+        if settings.groq_api_key:
+            return
+        raise RuntimeError("GROQ_API_KEY is required when LLM_PROVIDER=groq.")
     if provider == "anthropic":
         if settings.anthropic_api_key:
             return
@@ -169,5 +177,5 @@ def require_llm_credentials(settings: Settings) -> None:
             return
         raise RuntimeError("CUSTOM_LLM_BASE_URL is required when LLM_PROVIDER=custom.")
     raise RuntimeError(
-        "Unsupported LLM_PROVIDER. Expected one of: openai, gemini, anthropic, openrouter, ollama, custom."
+        "Unsupported LLM_PROVIDER. Expected one of: openai, groq, gemini, anthropic, openrouter, ollama, custom."
     )

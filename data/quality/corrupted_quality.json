@@ -1,0 +1,10 @@
+{
+  "report_name": "corrupted_quality.json",
+  "total_rows": 24,
+  "null_paper_ids": 0,
+  "duplicate_paper_ids": 2,
+  "null_titles": 0,
+  "empty_summaries": 3,
+  "stale_rows": 4,
+  "all_passed": false
+}
