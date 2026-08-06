@@ -6,5 +6,28 @@
   "null_titles": 0,
   "empty_summaries": 1,
   "stale_rows": 1,
-  "all_passed": false
+  "truncated_titles": 1,
+  "noisy_summaries": 1,
+  "all_passed": false,
+  "has_warnings": true,
+  "warning_count": 3,
+  "status": "fail",
+  "failed_row_samples": {
+    "duplicate_paper_ids": [
+      "10-20944-preprints202602-0996-v1",
+      "10-20944-preprints202602-0996-v1"
+    ],
+    "empty_summaries": [
+      "10-3390-buildings16132637"
+    ],
+    "stale_rows": [
+      "10-63646-kpqm1958"
+    ],
+    "truncated_titles": [
+      "10-1111-exsy-70341"
+    ],
+    "noisy_summaries": [
+      "10-21079-11681-50309"
+    ]
+  }
 }

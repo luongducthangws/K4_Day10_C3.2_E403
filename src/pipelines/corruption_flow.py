@@ -62,7 +62,9 @@ def main() -> None:
     # 4. Quality & Freshness Checks on Corrupted Data
     print("Step 5: Running Quality & Freshness Audits on Corrupted Data...")
     corrupted_quality = run_data_quality_checks(df_corrupted, settings, "corrupted_quality.json")
-    corrupted_freshness = build_freshness_report(df_corrupted, settings, None)
+    corrupted_freshness = build_freshness_report(
+        df_corrupted, settings, settings.paths.corrupted_freshness_report
+    )
 
     # 5. Data Repair Flow
     print("Step 6: Executing Data Repair Flow (Re-ingesting & Re-cleaning from Raw Records)...")
@@ -101,7 +103,9 @@ def main() -> None:
     # 7. Quality & Freshness Checks on Repaired Data
     print("Step 9: Running Quality & Freshness Audits on Repaired Data...")
     repaired_quality = run_data_quality_checks(df_repaired, settings, "repaired_quality.json")
-    repaired_freshness = build_freshness_report(df_repaired, settings, None)
+    repaired_freshness = build_freshness_report(
+        df_repaired, settings, settings.paths.repaired_freshness_report
+    )
 
     # 8. Comparison Report
     print("Step 10: Generating Markdown Comparison Report...")

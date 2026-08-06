@@ -75,6 +75,9 @@ def main() -> None:
     print("Step 6: Running Data Observability & Freshness Audits...")
     quality_report = run_data_quality_checks(df_clean, settings, "baseline_quality.json")
     freshness_report = build_freshness_report(df_clean, settings, settings.paths.freshness_report)
+    # Same payload under the state-specific name so baseline/corrupted/repaired
+    # freshness artifacts form a symmetric, comparable set.
+    build_freshness_report(df_clean, settings, settings.paths.baseline_freshness_report)
     print(f"  - Data Quality Passed: {quality_report['all_passed']}")
     print(f"  - Data Freshness     : {freshness_report['is_fresh']}")
 

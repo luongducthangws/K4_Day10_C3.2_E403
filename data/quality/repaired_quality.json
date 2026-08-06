@@ -6,5 +6,17 @@
   "null_titles": 0,
   "empty_summaries": 0,
   "stale_rows": 0,
-  "all_passed": true
+  "truncated_titles": 0,
+  "noisy_summaries": 0,
+  "all_passed": true,
+  "has_warnings": false,
+  "warning_count": 0,
+  "status": "pass",
+  "failed_row_samples": {
+    "duplicate_paper_ids": [],
+    "empty_summaries": [],
+    "stale_rows": [],
+    "truncated_titles": [],
+    "noisy_summaries": []
+  }
 }

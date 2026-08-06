@@ -13,19 +13,35 @@ This report summarizes the baseline ingestion, cleaning, vector indexing, evalua
 - **Evaluated Samples**: 40
 - **Retrieval Hit Rate**: 1.0000 (100.0%)
 - **Mean Token F1**: 1.0000
-- **LLM Judge Accuracy**: 1.0000 (100.0%)
-- **Mean LLM Judge Score**: 5.00 / 5.0
+- **LLM Judge Accuracy**: 0.9000 (90.0%)
+- **Mean LLM Judge Score**: 4.60 / 5.0
 
 ## 3. Data Observability & Quality Audit
-- **Total Clean Rows**: 24
-- **Null Paper IDs**: 0
-- **Duplicate Paper IDs**: 0
-- **Null Titles**: 0
-- **Empty Summaries**: 0
-- **Overall Data Quality Audit Status**: PASSED ✅
+
+### 3.1 Blocking checks (drive the pass/fail status)
+| Check | Value |
+| :--- | :---: |
+| Total Clean Rows | 24 |
+| Null Paper IDs | 0 |
+| Duplicate Paper IDs | 0 |
+| Null Titles | 0 |
+| Empty Summaries | 0 |
+
+### 3.2 Content-integrity warnings
+These catch damage that leaves a field non-null and long enough to pass the
+blocking checks, but still degrades retrieval.
+
+| Signal | Value |
+| :--- | :---: |
+| Truncated Titles | 0 |
+| Noisy Summaries (repeated-phrase injection) | 0 |
+| Stale Rows | 0 |
+
+- **Overall Data Quality Audit Status**: PASSED
 
 ## 4. Freshness Audit
 - **Latest Publication Date**: 2026-08-05
 - **Oldest Publication Date**: 2026-02-13
-- **Stale Rows Count**: 0
-- **Is Dataset Fresh?**: YES ✅
+- **Freshness Threshold**: 180 days
+- **Stale Rows Count**: 0 / 24
+- **Is Dataset Fresh?**: YES
