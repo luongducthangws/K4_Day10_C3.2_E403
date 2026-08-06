@@ -3,6 +3,15 @@
 Phạm vi: `src/ingestion/crossref.py` · `data/raw/`.
 File này ghi bằng chứng thật cho từng checkpoint, dùng để điền vào `report/individual_report.md` (mục 3, 6, 7).
 
+## Thông tin cá nhân
+
+| Thông tin | Nội dung |
+| --- | --- |
+| Họ và tên | Phùng Đình Đạt |
+| MSSV | 2A202601540 |
+| Khóa/Lớp | K4 |
+| Nhóm | Nhóm 6 thành viên |
+
 ## CP0 — Khởi động, contract & ingestion raw
 
 - `parse_crossref_payload`, `fetch_source_records`, `load_raw_records` đã implement đủ trong `src/ingestion/crossref.py`.
