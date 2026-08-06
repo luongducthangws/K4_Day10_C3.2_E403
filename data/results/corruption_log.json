@@ -1,0 +1,46 @@
+[
+  {
+    "type": "drop_records",
+    "count": 2,
+    "paper_ids": [
+      "10-2118-234689-pa",
+      "10-1007-s10278-026-02086-9"
+    ]
+  },
+  {
+    "type": "blank_summary",
+    "paper_id": "10-21203-rs-3-rs-10178277-v1"
+  },
+  {
+    "type": "blank_summary",
+    "paper_id": "10-3390-buildings16132637"
+  },
+  {
+    "type": "inject_noise",
+    "paper_id": "10-2196-preprints-106157"
+  },
+  {
+    "type": "inject_noise",
+    "paper_id": "10-21079-11681-50309"
+  },
+  {
+    "type": "truncate_title",
+    "paper_id": "10-63646-kpqm1958"
+  },
+  {
+    "type": "truncate_title",
+    "paper_id": "10-1111-exsy-70341"
+  },
+  {
+    "type": "stale_date",
+    "paper_id": "10-21203-rs-3-rs-10178277-v1"
+  },
+  {
+    "type": "stale_date",
+    "paper_id": "10-2196-preprints-106157"
+  },
+  {
+    "type": "add_duplicates",
+    "count": 2
+  }
+]
