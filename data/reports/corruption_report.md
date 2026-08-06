@@ -8,7 +8,7 @@ This report analyzes the impact of synthetic data corruption on RAG agent perfor
 | Pipeline Stage | Samples | Retrieval Hit Rate | Mean Token F1 | LLM Judge Accuracy | Mean Judge Score | Quality Status | Freshness |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Baseline (Clean)** | 40 | 1.00 | 1.00 | 1.00 | 5.00 | PASSED ✅ | Fresh ✅ |
-| **Corrupted (Damaged)** | 40 | 0.80 | 0.70 | 0.70 | 3.80 | FAILED ❌ | Stale ⚠️ |
+| **Corrupted (Damaged)** | 40 | 0.60 | 0.66 | 0.65 | 3.60 | FAILED ❌ | Stale ⚠️ |
 | **Repaired (Restored)** | 40 | 1.00 | 1.00 | 1.00 | 5.00 | PASSED ✅ | Fresh ✅ |
 
 ## 2. Key Findings & Insights

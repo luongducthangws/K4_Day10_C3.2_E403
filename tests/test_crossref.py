@@ -15,6 +15,8 @@ def make_settings(tmp_path: Path) -> Settings:
         model_name="gemini-2.5-flash",
         google_api_key="test",
         openai_api_key=None,
+        groq_api_key=None,
+        groq_base_url="https://api.groq.com/openai/v1",
         anthropic_api_key=None,
         openrouter_api_key=None,
         openrouter_base_url="https://openrouter.ai/api/v1",

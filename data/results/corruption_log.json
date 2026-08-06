@@ -1,46 +1,79 @@
-[
-  {
-    "type": "drop_records",
-    "count": 2,
-    "paper_ids": [
-      "10-2118-234689-pa",
-      "10-1007-s10278-026-02086-9"
-    ]
-  },
-  {
-    "type": "blank_summary",
-    "paper_id": "10-21203-rs-3-rs-10178277-v1"
-  },
-  {
-    "type": "blank_summary",
-    "paper_id": "10-3390-buildings16132637"
-  },
-  {
-    "type": "inject_noise",
-    "paper_id": "10-2196-preprints-106157"
-  },
-  {
-    "type": "inject_noise",
-    "paper_id": "10-21079-11681-50309"
-  },
-  {
-    "type": "truncate_title",
-    "paper_id": "10-63646-kpqm1958"
-  },
-  {
-    "type": "truncate_title",
-    "paper_id": "10-1111-exsy-70341"
-  },
-  {
-    "type": "stale_date",
-    "paper_id": "10-21203-rs-3-rs-10178277-v1"
-  },
-  {
-    "type": "stale_date",
-    "paper_id": "10-2196-preprints-106157"
-  },
-  {
-    "type": "add_duplicates",
-    "count": 2
-  }
-]
+{
+  "input_rows": 24,
+  "output_rows": 21,
+  "events": [
+    {
+      "corruption_type": "drop_latest_records",
+      "affected_paper_ids": [
+        "10-2118-234689-pa",
+        "10-1007-s10278-026-02086-9",
+        "10-21203-rs-3-rs-10178277-v1",
+        "10-2196-preprints-106157"
+      ],
+      "affected_rows": 4,
+      "parameter": {
+        "drop_count": 4,
+        "selection": "latest published first"
+      },
+      "before_row_count": 24,
+      "after_row_count": 20
+    },
+    {
+      "corruption_type": "blank_summary",
+      "affected_paper_ids": [
+        "10-3390-buildings16132637"
+      ],
+      "affected_rows": 1,
+      "before_summary_chars": 2207,
+      "after_summary_chars": 0
+    },
+    {
+      "corruption_type": "inject_summary_noise",
+      "affected_paper_ids": [
+        "10-21079-11681-50309"
+      ],
+      "affected_rows": 1,
+      "parameter": {
+        "noise_token": "CORRUPTED_NOISE",
+        "repetitions_each_side": 12
+      },
+      "before_summary_chars": 826,
+      "after_summary_chars": 1640
+    },
+    {
+      "corruption_type": "truncate_title",
+      "affected_paper_ids": [
+        "10-1111-exsy-70341"
+      ],
+      "affected_rows": 1,
+      "parameter": {
+        "max_original_characters_kept": 12
+      },
+      "before_title": "Hi\u2010 RAG : A Hierarchical Retrieval\u2010Augmented Generation Framework for Scalable and Generalisable Tool Selection in Large Language Model Agents",
+      "after_title": "Hi\u2010 RAG : A..."
+    },
+    {
+      "corruption_type": "make_publication_stale",
+      "affected_paper_ids": [
+        "10-63646-kpqm1958"
+      ],
+      "affected_rows": 1,
+      "parameter": {
+        "days_subtracted": 3650
+      },
+      "before_published": "2026-06-30",
+      "after_published": "2016-07-02",
+      "before_age_days": 37,
+      "after_age_days": 3687
+    },
+    {
+      "corruption_type": "duplicate_row",
+      "affected_paper_ids": [
+        "10-20944-preprints202602-0996-v1"
+      ],
+      "affected_rows": 1,
+      "before_row_count": 20,
+      "after_row_count": 21
+    }
+  ]
+}
